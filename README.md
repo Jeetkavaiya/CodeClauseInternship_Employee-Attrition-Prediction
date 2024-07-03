@@ -83,7 +83,7 @@ The dataset used for this project is hypothetical and contains various features 
 - promotion_last_5years
 - Department
 - salary
-<br/>
+
 You can download the dataset from [here](https://www.kaggle.com/datasets/kmldas/hr-employee-data-descriptive-analytics).
 
 ## Feature Engineering
@@ -116,8 +116,11 @@ Cross-validation is used to ensure the model's robustness.
 ## Results
 
 The final model's performance is summarized, and important features contributing to employee attrition are highlighted.
+
 The accuracy score of Logistic Regression is 80.13%
+
 The accuracy score of Random Forest is 99.10%
+
 The accuracy score of the best parameter is 98.85%
 ## Contributing
 
