@@ -132,3 +132,25 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+.
+├── data
+│   ├── raw_data.csv
+│   ├── processed_data.csv
+│   └── README.md
+├── notebooks
+│   ├── data_preprocessing.ipynb
+│   ├── exploratory_data_analysis.ipynb
+│   └── model_training.ipynb
+├── src
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── evaluation.py
+│   └── utils.py
+├── models
+│   ├── best_model.pkl
+│   └── model_metrics.txt
+├── README.md
+├── requirements.txt
+└── main.py
+
