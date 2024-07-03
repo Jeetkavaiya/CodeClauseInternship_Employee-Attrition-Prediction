@@ -83,6 +83,7 @@ The dataset used for this project is hypothetical and contains various features 
 - promotion_last_5years
 - Department
 - salary
+<br/>
 You can download the dataset from [here](https://www.kaggle.com/datasets/kmldas/hr-employee-data-descriptive-analytics).
 
 ## Feature Engineering
