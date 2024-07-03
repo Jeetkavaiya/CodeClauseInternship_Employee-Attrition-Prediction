@@ -12,7 +12,6 @@
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -34,7 +33,7 @@ Employee attrition is a significant concern for many organizations. Predicting w
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/Employee-Attrition-Prediction.git
+    git clone https://github.com/Jeetkavaiya/CodeClauseInternship_Employee-Attrition-Prediction.git
     cd Employee-Attrition-Prediction
     ```
 
@@ -75,17 +74,16 @@ Employee attrition is a significant concern for many organizations. Predicting w
 
 The dataset used for this project is hypothetical and contains various features such as:
 - Employee ID
-- Age
-- Gender
+- satisfaction_level
+- last_evaluation
+- number_project
+- average_monthly_hours
+- time_spend_company
+- Work_accident	left
+- promotion_last_5years
 - Department
-- Job Role
-- Job Satisfaction
-- Monthly Income
-- Over Time
-- Years at Company
-- Attrition (Target Variable)
-
-Ensure the dataset is placed in the `data/raw/` directory.
+- salary
+You can download the dataset from [here](https://www.kaggle.com/datasets/kmldas/hr-employee-data-descriptive-analytics).
 
 ## Feature Engineering
 
@@ -100,10 +98,8 @@ Different machine learning algorithms are used to build the prediction model, in
 - Logistic Regression
 - Decision Tree
 - Random Forest
-- Support Vector Machine
-- Gradient Boosting
 
-Hyperparameter tuning is performed using Grid Search or Random Search to optimize model performance.
+Hyperparameter tuning is performed using Grid Search, StratifiedKFold, and Random Search to optimize model performance.
 
 ## Evaluation
 
@@ -112,14 +108,16 @@ Model evaluation is done using various metrics such as:
 - Precision
 - Recall
 - F1 Score
-- ROC AUC Score
+- Confusion matrix
 
 Cross-validation is used to ensure the model's robustness.
 
 ## Results
 
-The final model's performance is summarized, and important features contributing to employee attrition are highlighted. Visualization of results and feature importance is provided in the `reports/figures/` directory.
-
+The final model's performance is summarized, and important features contributing to employee attrition are highlighted.
+The accuracy score of Logistic Regression is 80.13%
+The accuracy score of Random Forest is 99.10%
+The accuracy score of the best parameter is 98.85%
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
@@ -128,29 +126,4 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-.
-├── data
-│   ├── raw_data.csv
-│   ├── processed_data.csv
-│   └── README.md
-├── notebooks
-│   ├── data_preprocessing.ipynb
-│   ├── exploratory_data_analysis.ipynb
-│   └── model_training.ipynb
-├── src
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   ├── evaluation.py
-│   └── utils.py
-├── models
-│   ├── best_model.pkl
-│   └── model_metrics.txt
-├── README.md
-├── requirements.txt
-└── main.py
 
